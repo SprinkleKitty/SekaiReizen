@@ -1,0 +1,84 @@
+<DOCTYPE html!><html>
+    <head>
+    <style>
+    body{
+        padding:0px;
+     font-size: 20px;
+    
+     }
+
+    img{
+        margin:0px;
+        padding:0px;
+        border:0px;
+        }
+
+    p{
+        position:relative;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size:15px;
+    }
+    
+
+.button{
+        background-color:indianred;
+        color:black;
+padding:  10px;
+vertical-align: top;
+width: 200px;
+height: 50px;
+}
+
+        
+.asiafont{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 20px;
+}
+
+
+    </style>
+
+<script>
+    function displayImage(imgId)
+    {
+        document.getElementById('imga').style.display = "none";
+        document.getElementById('imgb').style.display = "none";
+        document.getElementById('imgc').style.display = "none";
+        document.getElementById('imgd').style.display = "none";
+        document.getElementById(imgId).style.display = "";
+    }
+
+ 
+</script>
+<title> WorldTravel Airport</title>
+
+</head>
+<body>
+   <p class="asiafont"> Asia is the largest continent in the world. It also has the most people.<br> There are hundreds of thousands of languages in Asia, because - well,<br>
+you can see how many countries there are. It's time to find out more about Asia! (you know what to do)  </p>
+
+ <div> 
+    <p class="are"> Click on the picture for a surprise!</p><img id="imgd" src="Images/a2.jpg" alt="" width="450px" height="450px" onclick="displayImage('imga')" style="display: none">   
+<img id="imga" src="Images/asiamap.jpg" alt="" width="450px" height="450px" onclick="displayImage('imgb')">
+<img id="imgb" src="Images/e3.jpg" alt="" width="300px" height="450px" onclick="displayImage('imgc')" style="display: none">   
+<img id="imgc" src="Images/a1.png" alt="" width="450px" height="450px" onclick="displayImage('imgd')" style="display: none"> 
+
+
+<input type="button" name="button" class="button" value="play AsiaGame" onclick="alert('No internet.\nTry:\n- checking the wires \n -coming back in a few months')">
+
+
+
+</div>
+
+
+
+<img  src="Images/doors2.jpg" alt="" width="450px" height="450px"> 
+<img  src="Images/copyright.JPG" > 
+
+
+       
+
+
+</body>
+                                  
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    body{
+        padding:0px;
+     font-size: 20px;
+    
+     }
+
+    img{
+        margin:0px;
+        padding:0px;
+        border:0px;
+        }
+
+    .container{
+        width: 1200px;
+        height:850px;                                                                      
+        display:flex;
+        flex-direction: column;   
+     flex-wrap: wrap;
+     justify-content: space-around;
+    align-items: center;             
+    }
+    .text{
+       align-self: flex-end;
+       position:relative;
+
+    }
+    p{
+        position:relative;
+        font-family:Comic Sans MS;
+    }
+    .button{
+        background-color:red;
+        color:black;
+padding:  10px;
+          width: 200px;
+          height: 50px;
+    }
+    .anime {
+
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+}
+@keyframes example {
+  0%   {background-color:lightpink; left:0px; top:0px;}
+  25%  {background-color:lemonchiffon; left:200px; top:0px;}
+  50%  {background-color:lightgreen; left:200px; top:200px;}
+  75%  {background-color:lightskyblue; left:0px; top:200px;}
+  100% {background-color:plum; left:0px; top:0px;}
+}
+    
+    </style>
+<title> WorldTravel Airport</title>
+
+
+</head>
+<body>
+    <div class="container">
+   <h1> South America </h1>
+ <div style="width: 35%"> 
+<img src="Images/SAdance.png" alt= "" width="350px" height="300px">
+<img src="Images/SAmap.png" alt=""  height="300px" width="300px" >
+
+ </div> 
+
+ <div  class="anime">
+<p>
+    Hello, I'm South America. South Americans live inside me.
+    These are the languages that<br> they speak:<br>
+    - Aymara 
+    - Quechua <br>
+    - Urarina- Wayuu<br>- Guarani - English<br>- Hakka- -Hindi<br>- Dutch - Indonesian<br>- French - Italian<br>- German - Japanese<br><br>
+Okay, enough about them. Let's talk about the contents of me! Just look at the map.<br>(I am very handsome, aren't I?)
+</p></div>
+ <input type="button" name="button" class="button" value="play SAGame" onclick="alert('You missed the flight. Flight will be available in a few months. ');"
+ >
+
+
+</div>
+</body>
+</html>

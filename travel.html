@@ -1,46 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>world map</title>
+<title>WorldTravel</title>
 <style type="text/css">
 
-area1:focus {
+ area1:focus {
   border: none;
   outline-style: none; 
   -moz-outline-style:none;  
-}
+} 
 
 .area {
   outline: 0;
 }
-.button{background-color:white;
-  color:black;
-  width:100px;
-  height:50px;}
+.button{
+  width:370px;
+  height:50px;
 
+  background-color: #e6b9f8;
+-webkit-border-radius: 60px;
+border-radius: 60px;
+border: none;
+color: #312525;
+cursor: pointer;
+display: inline-block;
+font-family: sans-serif; 
+font-size: 20px;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;  
+animation: glowing 1600ms infinite;
+  }
 
+  @keyframes glowing {
+0% { background-color: #e6b9f8; box-shadow: 0 0 3px #e6b9f8 }
+50% { background-color: #a6f3d9; box-shadow: 0 0 10px #a6f3d9; }
+}  
+ .p{
+   font-size: 20px;
+ }
+ a:hover{
+      color:slateblue;
+  }
+
+a{    text-decoration:none;
+ text-decoration-style: none;
+ font-size: 20px;
+ 
+}
 </style>
 <script>
-  
-
+        function getName() {
+            localStorage["uname"] = "";
+            var lName = prompt('Welcome!\nPlease enter your name below.');
+            if (lName == null) { lName = "unknown person";}
+            localStorage["uname"] = lName;
+        }
 </script>
 </head>
 <body>
-  <!-- https://en.wikipedia.org/wiki/Canada-->
+ 
   <div>
     <map name="usmap">
-      <area id="Canada" shape="rect" coords="90,10,290,180" alt="" href="linktravel.html">
-      <area id="US" shape="rect" coords="120,180,290,240" alt="" href="linktravel2.html">
-      <area id="Mexico" shape="rect" coords="170,240,240,300" alt="" href="linktravel3.html">
-     <area id="SA" shape="rect" coords="190,350,340," alt="" href="linktravel4.html">
-      <area shape="rect" coords="" alt="" href="linktravel5.html">
-      <area shape="rect" coords="" alt="" href="linktravel6.html">
-      <area shape="rect" coords="" alt="" href="linktravel7.html">
-      <area shape="rect" coords="" alt="" href="linktravel8">
-    </map>
-    <img usemap="#usmap" src="Images/images.jpeg" alt="" width="1000px" height="500px">
-     <input type="button" name="button" class="button"value="insert here!" onclick="prompt('Welcome!\nPlease enter your name below.')">
-   
+      <area id="Canada" shape="rect" coords="90,20,290,180" alt="" href="linktravel.html">
+      <area id="US" shape="rect" coords="120,180,290,250" alt="" href="linktravel2.html">
+      <area id="Mexico" shape="rect" coords="170,250,240,290" alt="" href="linktravel3.html">
+     <area id="SA" shape="rect" coords="260,290,380,530" alt="" href="linktravel4.html">
+      <area id="Europe"shape="rect" coords="450,60,580,230" alt="" href="linktravel5.html">
+      <area id="Africa"shape="rect" coords="450,250,580,470" alt="" href="linktravel6.html">
+      <area id="Asia"shape="rect" coords="580,60,880,270" alt="" href="linktravel7.html">
+      <area id="Australia"shape="rect" coords="680,370,900,450" alt="" href="linktravel8.html">
+    </map>        
+    
+     <input type="button" name="button" class="button" value="Who are you? Click to tell me!" onclick="getName()">
+     <p class="p"> Step 1: Click on the continent / countries in the map.
+       Step 2: After you're done, click the back button to get back to the map. Step 3: Repeat. 
+     </p><br>
+    <img usemap="#usmap" src="Images/images.jpeg" alt="" width="1000px" height="500px"> 
+   <h1> User Reviews: </h1><p class="p"><b>This is...Awesome!</b><br> "It feels like I am in a flight and I'm travelling.<br>
+    I liked all the surprises hidden in store. I give this website ten stars."<br>-Sahasra</p>
   </div>
+  <a href="bye.html"> Bye page (click this last)</a> 
 </body>
 </html>

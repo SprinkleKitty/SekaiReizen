@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    body{
+        padding:0px;
+     font-size: 20px;
+    
+     }
+
+    img{
+        margin:0px;
+        padding:0px;
+        border:0px;
+        }
+
+    .text{
+       align-self: flex-end;
+       position:relative;
+
+    }
+    .is{
+        position:relative;
+        font-family:Lucida handwriting;
+        font-size:15px;
+    }
+    .button{
+        background-color:red;
+        color:black;
+padding:  10px;
+        width: 200px;
+        height: 50px;  
+    }
+    .fontchange1{
+        font-family:Bradley Hand ITC;
+        font-size:25px;
+    }
+    .fontchange2{
+        font-family:Gabriola;
+        font-size:25px;
+    }
+    .are{
+        font-size: 20px;
+    }
+    </style>
+
+<script>
+    function displayImage(imgId)
+    {
+        document.getElementById('img1').style.display = "none";
+        document.getElementById('img2').style.display = "none";
+        document.getElementById('img3').style.display = "none";
+        document.getElementById('img4').style.display = "none";
+        document.getElementById(imgId).style.display = "";
+    }
+    function display() {
+            var lName = localStorage["uname"];
+            if (lName == null) { lName = "Unknown person";}
+            document.getElementById("sName").innerText = lName;
+        } 
+</script>
+<title> WorldTravel Airport</title>
+
+</head>
+<body>
+    <div>
+ <div> 
+
+    <p class="are"> Click on the picture for a surprise!</p><img id="img1" src="Images/e1.jpg" alt="" width="300px" height="300px" onclick="displayImage('img2')" style="display: none">
+<img id="img2" src="Images/e2.jpg" alt="" width="800px" height="300px" onclick="displayImage('img3')" style="display: none">
+<img id="img3" src="Images/e3.jpg" alt="" width="200px" height="300px" onclick="displayImage('img4')" style="display: none">
+<img id="img4" src="Images/eurmap.gif" alt="" width="400px" height="300px" onclick="displayImage('img1')">
+
+</div>
+
+<p class="is">
+   Hi, I'm Clare and I live in Ireland. Ireland's languages are Irish and English. It is a beautiful place to live.&nbsp  &nbsp  
+   <br><span class=fontchange1>Hi, my name is Friedrich and
+       I live in Germany. We speak German, English, Spanish, and French.&nbsp  &nbsp   </span>
+       <br><span class=fontchange2> Hi, I'm Asta. I live in Sweden, and I speak Swedish
+           . 
+       </span>
+       <br><b>We all agree that Europe is the best place to live.</b></p>
+ <input type="button" name="button" class="button" value="play EuropeGame" onclick="alert('??\nButton not linked to anything. ')" />
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+
+
+<!DOCTYPE html>
+<head>
+    <style>
+    body{
+        padding:0px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+    
+     }
+    .divImg{
+    margin:0px;
+    padding:0px;
+    width: 500px;
+    height: 500px;
+    border:0px
+    
+    }
+    img{
+        margin:0px;
+        padding:0px;
+        border:0px;
+        }
+
+        .button{
+    background-color: rgba(253, 4, 87, 0.533);
+    color:black;
+    width: 200px;
+    height: 50px;
+padding:  10px;
+        }
+    p{
+        font-family:Ink free;
+    }
+    .colorchange{
+    color: mediumorchid;
+    text-decoration:underline ;
+
+}
+    </style>
+    <script>      function display() {
+        var lName = localStorage["uname"];
+        if (lName == null) { lName = "Unknown person";}
+        document.getElementById("sName").innerText = lName;
+    } </script>
+
+<title> WorldTravel Airport</title>
+
+</head>
+<body onload="display()">
+
+<div style="width: 35%">
+<img src="Images/mexicomap.JPG" alt="" width="400px" height="300px">
+<img src="Images/catshaker.gif" alt="" width="400px" height="300px">
+
+</div>
+<div  style="width: 65%">
+
+<p>
+    Hi <span id="sName"></span>, it's nice to meet you! My name is Ana Maria. I live in Mexico, and I will help you on your journey.
+But first, I will tell you about Mexico.Our flag colors are green, white, and red.<br> Mexico is the thirteenth largest country in
+the world. Now its time to come explore with me! 
+    
+</p>
+<br>
+<input type="button" name="button" class="button" value="play MexicoGame" onclick="alert('Sorry, unable to find a plane for you.');">
+</div>
+</body>
+</html>
