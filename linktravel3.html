@@ -41,6 +41,11 @@ padding:  10px;
     text-decoration:underline ;
 
 }
+
+.font{
+    font-family:serif;
+    color:deeppink;
+}
     </style>
     <script>      function display() {
         var lName = localStorage["uname"];
@@ -61,13 +66,15 @@ padding:  10px;
 <div  style="width: 65%">
 
 <p>
-    Hi <span id="sName"></span>, it's nice to meet you! My name is Ana Maria. I live in Mexico, and I will help you on your journey.
-But first, I will tell you about Mexico.Our flag colors are green, white, and red.<br> Mexico is the thirteenth largest country in
-the world. Now its time to come explore with me! 
+    Hi <span id="sName"></span>, it's nice to meet you! My name is Ana Maria. I live in Mexico, and I will help you on your journey to Mexico.<br>
+But first, I will tell you about Mexico.Our flag colors are green, white, and red. Mexico is the thirteenth largest country in
+the world. <br>Before you come to Mexico, please use a Spanish translator to learn Spanish. 
+¡Gracias!
+ 
     
 </p>
 <br>
-<input type="button" name="button" class="button" value="play MexicoGame" onclick="alert('Sorry, unable to find a plane for you.');">
+<input type="button" name="button" class="button" value="play MexicoGame" onclick="window.location.href='MexicoGame.html';">
 </div>
 </body>
 </html>
