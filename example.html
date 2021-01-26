@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            font-family: Tahoma;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            cursor: none;
+            background-color: pink;
+
+        }
+.cursor{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position:absolute;
+    transform: translate3d(-50%, -50%, 0);
+    top:0;
+    left: 0;
+    background-color: seashell;
+    border: silver dashed 1px;
+
+}
+.cursor-lazy{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: 2px solid black;
+position: absolute;
+transform: translate3d(-50%, -50%, 0);
+top:0;
+left: 0;
+transition: 0.1s ease-out;
+
+}
+.a{
+float: left;
+color: lightgreen;
+}
+.b{
+color: plum;
+font-family: cursive;
+}
+    </style>
+</head>
+<body style="background-color:white ;" >
+ <div class="cursor"></div>
+ <div class="cursor-lazy"></div>  
+ <script>
+         var cursor = document.querySelector('.cursor');
+         var cursorLazy = document.querySelector('.cursor-lazy');
+         var links = document.querySelector('a');
+
+         var editCursor = function editCursor(event){
+             cursor.style.left = event.clientX + 'px';
+             cursor.style.top = event.clientY + 'px';
+             cursorLazy.style.left = event.clientX + 'px';
+             cursorLazy.style.top = event.clientY + 'px';
+
+         };
+         window.addEventListener('mousemove', editCursor);
+         
+
+
+ </script>
+  
+</body>
+</html>
